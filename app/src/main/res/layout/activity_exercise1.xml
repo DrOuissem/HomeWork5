@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercise1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="92dp"
+        android:text="Question1: Which symbol is used for comments in kotlin"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="306dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="//" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=".." />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="**" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="Question2: Select all correct answers"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="264dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="fun is the keyword used to declare a function"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="262dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="there is no while loop in kotlin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="264dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="In Kotlin, code statements must end with a semicolon (;)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="40dp"
+        android:text="submit"
+        app:layout_constraintStart_toEndOf="@+id/reset"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
